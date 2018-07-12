@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.logo {
+	width: 300px;
+	height: 55px;
+	border-radius: 75px;
+}
+
+.navbar {
+	background-color: #E9DCEF;
+	font-family: 'Song Myung', serif;
+	font-size: 20px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.navbar .navbar-nav > li > a {
+	font-weight: bold;
+}
+
+.nav-item > a:hover {
+	font-weight: bold;
+	color: #B594AE;
+}
+
+.navbar .navbar-nav > li > a {
+	color: #EFB6D1;
+}
+
+.soc-med {
+	padding: 5px;
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.social .soc-med:hover, .social .social-med:active{
+	color: #FFF;
+    -webkit-box-shadow: 1px 1px 3px #333;
+    -moz-box-shadow: 1px 1px 3px #333;
+    box-shadow: 1px 1px 3px #333;
+}
+
+.social.icon-zoom .soc-med:hover, .social.icon-zoom .soc-med:active{
+	-webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+
+/*Our Story*/
+.container {
+	background-image: url(../images/cake-cover.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right bottom;
+}
+
+#our-story {
+	font-family: 'Advent Pro', sans-serif;
+	padding: 5px;
+	color: #91778C;
+}
+
+strong {
+	color: #91778C;
+}

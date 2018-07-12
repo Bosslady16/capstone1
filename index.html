@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>Cake Lady</title>
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- animate -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Questrial|Song+Myung" rel="stylesheet">
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="home">
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Navbar -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
+  			<a class="navbar-brand mr-0" id="custom-nav" href="#"><img src="assets/images/cakelady1.png" class="logo d-inline-block align-top" alt="Cake Lady"></a>
+  	
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+
+  	<div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto text-center">
+      
+      <li class="nav-item active" id="nav-item">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Our Team</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Order Now</a>
+      </li>
+    </ul>
+
+    	<!-- social media icons -->
+    <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap icon-zoom social">
+         <li><a href="#"><img src="assets/images/facebook.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/instagram.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/twitter.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/youtube.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/snapchat.png" class="soc-med"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- End of navbar -->
+
+<!-- Slider -->
+<div class="container-fluid">
+	<div id="carouselExampleControls" class="carousel slide" data-interval="3000" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assets/images/cake.jpeg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/cake2.jpeg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/cake3.jpeg" alt="Fourth slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="assets/images/cake4.jpeg" alt="Fifth slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<!-- End of slider -->
+
+<!-- Our Story -->
+<div class="container">
+	<div class="row">
+		<div class="col-sm-6">
+		<h2 class="display-4 mt-3" id="our-story">Our Story</h2>
+			<p class="lead"><strong>Cake Lady </strong>started year 2015 out of passion in cooking, baking and decorating. Lady shares her work in instagram and people notices how good her cakes look then asking if she can bake for them. Eventually from one people, the store grows to cater all client's requests and orders. We like to exceed beyond the expectations of our customers and always deliver excellent service which is why our clients keep coming back.</p>
+		</div>
+	</div>
+</div>
+<!-- End of Our Story -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- jquery first, then popper.js, then bootstrap -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+<!-- external bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>
