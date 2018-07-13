@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- animate -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<!-- font-awesome -->
@@ -112,6 +113,23 @@ $(document).ready(function(){
 </div>
 
 <!-- End of slider -->
+
+<!-- Back to top -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})	
+</script>
+
+<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<!-- end of back top -->
 
 <!-- Our Story -->
 <div class="container-fluid" id="container-story">
