@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>Cake Lady</title>
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- animate -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Maitree|Acme|Ubuntu|Roboto+Condensed" rel="stylesheet">
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+</head>
+<body id="our-team">
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Navbar -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
+  			<a class="navbar-brand mr-0" id="custom-nav" href="#"><img src="assets/images/cakelady1.png" class="logo d-inline-block align-top" alt="Cake Lady"></a>
+  	
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+
+  	<div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto text-center">
+      
+      <li class="nav-item" id="nav-item">
+        <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="gallery.html">Gallery</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link text-uppercase" href="#our-team">Our Team</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#">Order Now</a>
+      </li>
+    </ul>
+
+    	<!-- social media icons -->
+    <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap icon-zoom social">
+         <li><a href="#"><img src="assets/images/facebook.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/instagram.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/twitter.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/youtube.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/snapchat.png" class="soc-med"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- End of navbar -->
+
+<!-- Header -->
+<section><a href="#team" class="scroll-down" address="true"></a></section>
+
+<img src="assets/images/cake-baker.jpg" class="team-heading img-fluid">
+
+  <script type="text/javascript">
+    $(document).ready(function($){
+$("a").on('click', function (e) {
+if (this.hash !== "" && this.pathname == window.location.pathname) {
+e.preventDefault();
+var target = this.hash;
+var topOffset = 0; 
+if (target != "#top") {
+var topOffset = $(target).offset().top;
+}
+
+$('html, body').stop().animate({
+'scrollTop': topOffset
+}, 900, 'swing', function () {
+window.location.hash = target;
+});
+}
+});
+});
+  </script>
+
+<!-- end of header -->
+
+<!-- Team -->
+<section id="team" class="pb-3 pt-3">
+    <div class="container">
+        <img src="assets/images/core-team.jpg" class="img-fluid mx-auto our-team">
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>Founder</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>Co-Founder</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_03.png" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>Chief Marketing Officer</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_04.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>Sales Martketing Manager</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_05.png" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>General Accountant Manager</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_06.jpg" alt="card image"></p>
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <small>Cake Decorator</small>
+                                    <p class="card-text">This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title">Firstname Lastname</h4>
+                                    <p class="card-text">This is basic card with image on top, title, description.This is basic card with image on top, title, description.This is basic card with image on top, title, description.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+
+        </div>
+    </div>
+</section>
+<!-- end of core Team -->
+
+<!-- Be part of our team -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 mx-auto mt-2">
+    <img src="assets/images/be-part.jpg" id="be-part">
+      <img src="assets/images/cake.gif" class="team-cake">
+      <p class="lead mt-5" id="team-text">Encouraging all cake and pastry lover to join our growing team.<br> No required baking skills, but we need passionate and dedicated people.<br>If you're interested, send your resume to:<br><img src="assets/images/mail.gif" class="team-mail"><span class="team-email"><a href="mailto:barrun.lady@gmail.com">apply@cakelady.com</a></span></p>
+    </div>
+  </div>  
+</div>
+
+  <!-- end -->
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+    <div id="cake-footer">
+      <div class="container mt-2">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0" id="get-connect">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right social">
+
+            <!-- Facebook -->
+           <a href="#!"><img src="assets/images/fb.png" class="soc-med"></a>
+            <!-- Twitter -->
+            <a href="#!">
+              <img src="assets/images/tw.png" class="soc-med"></a>
+            <!-- Instagram -->
+            <a href="#!">
+              <img src="assets/images/ig.png" class="soc-med"></a>
+            <!--Youtube -->
+            <a href="#!">
+              <img src="assets/images/yt.png" class="soc-med"></a>
+            <!--Snapchat-->
+           <a href="#!">
+              <img src="assets/images/sc.png" class="soc-med"></a>
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Disclaimer</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purle">
+          <p id="footer-text">Images in this website are from Pexels, Unsplash and Google. Photos are used for training purpose and not to commercialized.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <a href="#!">Cakes</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Cupcakes</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Pastry</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Desserts</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Questions?</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <a href="#!">FAQ's</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <i class="fa fa-home mr-3"></i> 135 B, Building A SM Megamall, EDSA Corner Julia Vargas Avenue</p>
+          <p id="footer-text">
+            <i class="fa fa-envelope mr-3"></i> orders@cakelady.com</p>
+          <p id="footer-text">
+            <i class="fa fa-phone mr-3"></i> +639-485681578</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" id="footer-text">© 2018 Copyright:
+      <a href="#" id="copyright-cake"> Cake Lady</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+<!-- external bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

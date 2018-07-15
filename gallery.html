@@ -16,7 +16,7 @@
 	<!-- font-awesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- google fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Questrial|Song+Myung|Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Questrial|Acme|Ubuntu" rel="stylesheet">
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
@@ -62,7 +62,7 @@ $(document).ready(function(){
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#">Our Team</a>
+        <a class="nav-link text-uppercase" href="our-team.html">Our Team</a>
       </li>
 
       <li class="nav-item">
@@ -239,27 +239,24 @@ $(document).ready(function(){
 <!-- End of gallery -->
 
 <!-- Sign Up Newsletter -->
-<div class="container-fluid mt-4" data-sequence="500" id="sign-up-form">
-     <div class="row" id="sign-up-form mr-5">
-         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-5 my-5 mx-auto">
-         	<div class="">
-             <form>
-                <div class="text-center"></div>
-                <div class="text-center my-2 mx-5">
-                   <h3>Receive latest update straight to your email!</h3>
-                 </div>
-                 <div class="form-group">
-                <input type="text" name="name" placeholder="Awesome Human" class="form-control my-2 shadow-sm p-2 mb-2 rounded" id="form-control">
-                <input type="email" name="email" placeholder="email@example.com" class="form-control my-2 shadow-sm p-2 mb-2 rounded" id="form-control">
-                </div>
-                <div class="form-group">
-                 <button type="button" class="btn btn-lg btn btn-info" id="sign-up-btn">Sign Up!</button>
-                  </div>
-               </form>
-         </div>
-     </div>
-    </div> 
- </div>
+<div class="container-fluid sign-up">
+  <div class="row">
+    <div class="col-md-6 px-5 py-5">
+      <form action="#" method="post" name="receive latest update" class="mx-auto">
+      <div class="header">
+        <img src="assets/images/cupcake.gif" class="cupcake"><img src="assets/images/cupcake.gif" class="cupcake"><img src="assets/images/cupcake.gif" class="cupcake"><p>Receive Latest Update!</p>
+      </div>
+      <div class="description">
+        <p>Get latest promotions, discounts and updates by signing up.</p>
+      </div>
+      <div class="input col-md-12 mx-auto">
+        <input type="text" class="button" id="email" name="email" placeholder="NAME@EXAMPLE.COM">
+        <input type="submit" class="button" id="submit" value="SIGN UP">
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
 
  <!-- end -->
 
@@ -284,19 +281,21 @@ $(document).ready(function(){
           <div class="col-md-6 col-lg-7 text-center text-md-right social">
 
             <!-- Facebook -->
-            <a href="#"><img src="assets/images/fb.png" class="soc-med1"></a>
+            <a href="#!">
+              <img src="assets/images/fb.png" class="soc-med"></a>
             <!-- Twitter -->
-            <a href="#">
-              <img src="assets/images/tw.png" class="soc-med1"></a>
+            <a href="#!">
+              <img src="assets/images/tw.png" class="soc-med"></a>
             <!-- Instagram -->
-            <a href="#">
-              <img src="assets/images/ig.png" class="soc-med1"></a>
+            <a href="#!">
+              <img src="assets/images/ig.png" class="soc-med"></a>
             <!--Youtube -->
-            <a href="#">
-              <img src="assets/images/yt.png" class="soc-med1"></a>
+            <a href="#!">
+              <img src="assets/images/yt.png" class="soc-med"></a>
             <!--Snapchat-->
-           <a href="#">
-              <img src="assets/images/sc.png" class="soc-med1"></a>
+           <a href="#!">
+              <img src="assets/images/sc.png" class="soc-med"></a>
+
 
           </div>
           <!-- Grid column -->
