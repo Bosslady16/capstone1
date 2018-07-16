@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- animate -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<!-- font-awesome -->
@@ -19,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Dosis|Overlock|Questrial|Acme|Ubuntu|Cabin+Sketch" rel="stylesheet">
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 </head>
 <body id="home">
 
@@ -54,19 +55,19 @@ $(document).ready(function(){
     <ul class="navbar-nav mx-auto text-center">
       
       <li class="nav-item active" id="nav-item">
-        <a class="nav-link text-uppercase" href="#home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-uppercase" href="#home"><img src="assets/images/home.png" class="home-icon"><span class="sr-only">(current)</span><small id="nav-link-sm">Home</small></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="gallery.html">Gallery</a>
+        <a class="nav-link text-uppercase" href="gallery.html"><img src="assets/images/gallery.png" class="home-icon"><small id="nav-link-sm">Gallery</small></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="our-team.html">Our Team</a>
+        <a class="nav-link text-uppercase" href="our-team.html"><img src="assets/images/people.png" class="home-icon"><small id="nav-link-sm">Our Team</small></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#">Order Now</a>
+        <a class="nav-link text-uppercase" href="contact-us.html"><img src="assets/images/contact-us.png" class="home-icon"><small id="nav-link-sm"> Contact Us</small></a>
       </li>
     </ul>
 
@@ -114,6 +115,25 @@ $(document).ready(function(){
 <!-- End of slider -->
 
 <!-- Back to top -->
+
+<a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
 
 <!-- end of back top -->
 
@@ -204,7 +224,7 @@ $(document).ready(function(){
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold" id="footer-heading">Disclaimer</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purle">
-          <p id="footer-text">Images in this website are from Pexels, Unsplash and Google. Photos are used for training purpose and not to commercialized.</p>
+          <p id="footer-text">Images in this website are from Pexels, Unsplash, Dribble and Google Images. Photos are used for training purpose and not to commercialized.</p>
 
         </div>
         <!-- Grid column -->

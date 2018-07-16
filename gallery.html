@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- animate -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<!-- font-awesome -->
@@ -19,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Questrial|Acme|Ubuntu" rel="stylesheet">
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 </head>
 <body id="gallery">
 
@@ -54,19 +55,19 @@ $(document).ready(function(){
     <ul class="navbar-nav mx-auto text-center">
       
       <li class="nav-item" id="nav-item">
-        <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-uppercase" href="index.html"><img src="assets/images/home.png" class="home-icon"><span class="sr-only">(current)</span><small id="nav-link-sm">Home</small></a>
       </li>
       
       <li class="nav-item active">
-        <a class="nav-link text-uppercase" href="#gallery">Gallery</a>
+        <a class="nav-link text-uppercase" href="#gallery"><img src="assets/images/gallery.png" class="home-icon"><small id="nav-link-sm">Gallery</small></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="our-team.html">Our Team</a>
+        <a class="nav-link text-uppercase" href="our-team.html"><img src="assets/images/people.png" class="home-icon"><small id="nav-link-sm">Our Team</small></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#">Order Now</a>
+        <a class="nav-link text-uppercase" href="contact-us.html"><img src="assets/images/contact-us.png" class="home-icon"><small id="nav-link-sm">Contact Us</small></a>
       </li>
     </ul>
 
@@ -83,6 +84,28 @@ $(document).ready(function(){
 
  <!--end of navbar  -->
 
+ <!-- Back to top -->
+  <a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+ <!-- end -->
+
 <!-- Gallery -->
 
 <div class="container">
@@ -97,7 +120,7 @@ $(document).ready(function(){
 	<img src="assets/images/cake-gal2.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Hazelnut Cake</h2>
-				<p>The hazelnut cake is a no-fuss, no-mixer-needed recipe and the ganache does double duty as a cake filling and as the flavoring for the buttercream.
+				<p id="gal-text">The hazelnut cake is a no-fuss, no-mixer-needed recipe and the ganache does double duty as a cake filling and as the flavoring for the buttercream.
 				</p>
     </div>
 </div>
@@ -105,119 +128,119 @@ $(document).ready(function(){
 	<img src="assets/images/cake-gal1.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Pink Ruffle Cake</h2>
-				<p>Ruffle cakes are the new darlings of the cake world, and rightfully so. They are dramatic and sweet, yet relatively fast and easy, and they allow for a mer.</p>
+				<p id="gal-text">Ruffle cakes are the new darlings of the cake world, and rightfully so. They are dramatic and sweet, yet relatively fast and easy, and they allow for a mer.</p>
     </div>
 </div>    
 <div class="hovereffect">
 	<img src="assets/images/cake-gal.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Strawberry Cheesecake</h2>
-				<p>Cheesecake is usually sweetened with sugar and may be flavored or topped with fruit, whipped cream, nuts, cookies, fruit sauce, or chocolate syrup.</p>
+				<p id="gal-text">Cheesecake is usually sweetened with sugar and may be flavored or topped with fruit, whipped cream, nuts, cookies, fruit sauce, or chocolate syrup.</p>
     </div>
 </div>    
 <div class="hovereffect">    
 	<img src="assets/images//cake-gal4.jpg" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Rainbow Cake</h2>
-				<p>The happiest cake you'll ever eat! The vibrant colors will add the perfect touch to any celebration!</p>
+				<p id="gal-text">The happiest cake you'll ever eat! The vibrant colors will add the perfect touch to any celebration!</p>
     </div>
 </div>
 <div class="hovereffect">    
 	<img src="assets/images//cake-gal3.jpg" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Watermelon Orange Syrup Cake</h2>
-				<p>Made of sweet, refreshing watermelon and frosted with creamy Cool Whip Whipped Topping, this fun fruit dessert is perfect for your next summer get-together!</p>
+				<p id="gal-text">Made of sweet, refreshing watermelon and frosted with creamy Cool Whip Whipped Topping, this fun fruit dessert is perfect for your next summer get-together!</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal5.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Pink Cherry Cake</h2>
-				<p>This moist Cherry Cake recipe is tender, flavorful, and is the prettiest shade of pink!</p>
+				<p id="gal-text">This moist Cherry Cake recipe is tender, flavorful, and is the prettiest shade of pink!</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal6.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>4 Layer Vanilla Chiffon Cake</h2>
-				<p>It is a light cake that is made of oil, eggs, cake flour, sugar, baking powder and vanilla extract (as flavoring). Created to celebrate two people decided to tie the knot</p>
+				<p id="gal-text">It is a light cake that is made of oil, eggs, cake flour, sugar, baking powder and vanilla extract (as flavoring). Created to celebrate two people decided to tie the knot</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal7.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Star Colorful Mini-cake</h2>
-				<p>Rainbow cake joy, in a teeny tiny individual portion! Sprinkle and topped with star shape sweets, perfect for any occassion.</p>
+				<p id="gal-text">Rainbow cake joy, in a teeny tiny individual portion! Sprinkle and topped with star shape sweets, perfect for any occassion.</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal8.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Fruit Cake</h2>
-				<p>is a cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits. Fruit cakes are typically served in celebration of weddings and Christmas.</p>
+				<p id="gal-text">is a cake made with candied or dried fruit, nuts, and spices, and optionally soaked in spirits. Fruit cakes are typically served in celebration of weddings and Christmas.</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal9.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Rasberry Cake</h2>
-				<p>Simple, tender buttermilk cake topped with a nice, sugary crunch: We like it as it is, full of raspberries, but you could easily substitute any sweet, juicy berries.</p>
+				<p id="gal-text">Simple, tender buttermilk cake topped with a nice, sugary crunch: We like it as it is, full of raspberries, but you could easily substitute any sweet, juicy berries.</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal10.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Caramel Whipped Cake</h2>
-				<p>As far as fall desserts go, this one really takes the cake. If you really want to go all out, make your own caramel whipped cream and sauce for this fall cake recipe.</p>
+				<p id="gal-text">As far as fall desserts go, this one really takes the cake. If you really want to go all out, make your own caramel whipped cream and sauce for this fall cake recipe.</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal11.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Moist Vanilla Cupcake</h2>
-				<p>These are dense like a sponge cake, stays moist for days and are packed with vanilla flavor. These are topped with a whipped vanilla frosting. </p>
+				<p id="gal-text">These are dense like a sponge cake, stays moist for days and are packed with vanilla flavor. These are topped with a whipped vanilla frosting. </p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal12.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Macaroons</h2>
-				<p>It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
+				<p id="gal-text">It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
     </div>
 </div>
 <div class="hovereffect">  
 	<img src="assets/images/cake-gal13.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Macaroons</h2>
-				<p>It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
+				<p id="gal-text">It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal14.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Double Fruit Pie</h2>
-				<p>Only half the fruit in this double pie is cooked; the other half is stirred in without heating. You can make it with blueberries, apricots and blackberries, mixed berries, or peach and raspberries. </p>
+				<p id="gal-text">Only half the fruit in this double pie is cooked; the other half is stirred in without heating. You can make it with blueberries, apricots and blackberries, mixed berries, or peach and raspberries. </p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal16.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Mini Layer Cake</h2>
-				<p>This Mini Chocolate Layer Cake is so petite, it serves just 2 people! It's perfect for when that cake craving hits and you don't want to make a whole cake.</p>
+				<p id="gal-text">This Mini Chocolate Layer Cake is so petite, it serves just 2 people! It's perfect for when that cake craving hits and you don't want to make a whole cake.</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal17.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Buttercream Flower Cake</h2>
-				<p>It's a simple chocolate cake frosted with American buttercream and topped with buttercream piped flowers. From Easter to Mother's Day, birthdays to bridal showers, today's cake is sure to impress</p>
+				<p id="gal-text">It's a simple chocolate cake frosted with American buttercream and topped with buttercream piped flowers. From Easter to Mother's Day, birthdays to bridal showers, today's cake is sure to impress</p>
     </div>
 </div>
 <div class="hovereffect">      
 	<img src="assets/images/cake-gal18.jfif" alt=""class="img-responsive">
 	<div class="overlay">
                 <h2>Multiple Layer Mocha Blueberry Cake</h2>
-				<p>Coffee and chocolate marry into a delicious, moist mocha cake that's doubly flavorful.</p>
+				<p id="gal-text">Coffee and chocolate marry into a delicious, moist mocha cake that's doubly flavorful.</p>
     </div>
 </div>    
 
@@ -225,7 +248,7 @@ $(document).ready(function(){
 	<img src="assets/images/cake-gal19.jfif" alt=""class="img-responsive">
 	<div class="overlay">
              <h2>Macaroons</h2>
-				<p>It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
+				<p id="gal-text">It's a sweet meringue-based confection made with egg white, icing sugar, granulated sugar, almond powder or ground almond, and food coloring. </p>
     </div>
 </div>    
 				
@@ -318,7 +341,7 @@ $(document).ready(function(){
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold" id="footer-heading">Disclaimer</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purle">
-          <p id="footer-text">Images in this website are from Pexels, Unsplashed and Google. Photos are used for training purpose and not to commercialized.</p>
+          <p id="footer-text">Images in this website are from Pexels, Unsplash, Dribble and Google Images. Photos are used for training purpose and not to commercialized.</p>
 
         </div>
         <!-- Grid column -->

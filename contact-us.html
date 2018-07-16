@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+
+	<title>Cake Lady</title>
+
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/testimonial.css">
+	<!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link href="https://unpkg.com/bootstrap@4.0.0/dist/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="assets/css/mdb.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- animate -->
+	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<!-- google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Maitree|Acme|Ubuntu|Roboto+Condensed" rel="stylesheet">
+	<!-- javascript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+</head>
+<body id="contact-us">
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 400, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Navbar -->
+	<nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
+  			<a class="navbar-brand mr-0" id="custom-nav" href="#"><img src="assets/images/cakelady1.png" class="logo d-inline-block align-top" alt="Cake Lady"></a>
+  	
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+
+  	<div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto text-center">
+      
+      <li class="nav-item" id="nav-item">
+        <a class="nav-link text-uppercase" href="index.html"><img src="assets/images/home.png" class="home-icon"><span class="sr-only">(current)</span><small>Home</small id="nav-link-sm"></a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="gallery.html"><img src="assets/images/gallery.png" class="home-icon"><small id="nav-link-sm">Gallery</small></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="our-team.html"><img src="assets/images/people.png" class="home-icon"><small id="nav-link-sm">Our Team</small></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-uppercase" href="#contact-us"><img src="assets/images/contact-us.png" class="home-icon"><small id="nav-link-sm">Contact Us</small></span></a>
+      </li>
+    </ul>
+
+    	<!-- social media icons -->
+    <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap icon-zoom social">
+         <li><a href="#"><img src="assets/images/facebook.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/instagram.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/twitter.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/youtube.png" class="soc-med"></a></li>
+         <li><a href="#"><img src="assets/images/snapchat.png" class="soc-med"></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- End of navbar -->
+
+<!-- Back to top -->
+
+<a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<!-- end -->
+
+<!-- contact-form -->
+
+<div class="container animated bounce slow" id="contact-body">
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-5 pt-2">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions, comments or inquiries?<br> Please do not hesitate to contact us directly. Our team will come back to you within
+        matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5 mx-auto">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="contact-label">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email1" name="email" class="form-control">
+                            <label for="email" class="contact-label">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="contact-label">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message" class="contact-label">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left pb-2">
+                <a href="#popup1"><img src="assets/images/send.png" id="send-btn"></a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+    </div>
+</div>
+
+<div id="popup1" class="overlay1">
+  <div class="popup">
+    <h2 id="pop-up-header">Thank you for contacting us!</h2>
+      <p id="pop-up-text">We will get back to you soon.</p>
+      <img src="assets/images/send-ty.gif" id="send-gif">
+    <a class="close" href="#">&times;</a>
+    </div>
+  </div>
+</div>
+
+<!-- end -->
+
+
+
+<!-- Testimonial -->
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+<script src="https://unpkg.com/popper.js@1.12.9/dist/umd/popper.js"></script>
+<script src="https://unpkg.com/bootstrap@4.0.0/dist/js/bootstrap.js"></script>
+
+  <div class="container my-5">
+    <h1 class="text-center my-3 card-heading">Testimonials</h1>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner row w-100 mx-auto">
+        <div class="carousel-item col-md-4 active">
+          <div class="card mb-4">
+            <div class="card-body">
+              <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Lucy Maud Montgomery</h4>
+              <p class="card-text"><q>Cakes have such a terrible habit of turning out bad just when you especially want them to be good.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Blogger/Model</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic1.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Buddy Valastro</h4>
+              <p class="card-text"><q>Cakes are special. Every birthday, every celebration ends with something sweet, a cake, and people remember. It's all about the memories.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Content Writer</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic2.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Mehek Bassi</h4>
+              <p class="card-text"><q>Life is a cake and love is the icing on top of it. Without love, it becomes difficult to swallow life.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Coffee Shop Owner</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic3.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Zygmunt Bauman</h4>
+              <p class="card-text"><q>You cannot have a cake and eat it too. Either you eat it, or you have it.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Graphic Artist</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic4.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Danielle Steel</h4>
+              <p class="card-text"><q>A bad review is like baking a cake with all the best ingredients and having someone sit on it.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Web Developer</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic5.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Jeff Conaway</h4>
+              <p class="card-text"><q>If I can tell my story, and help anybody else in the interim, then that's icing on the cake.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Photographer</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item col-md-4">
+          <div class="card mb-4">
+            <div class="card-body">
+            <div class="view overlay">
+              <img class="card-img-top" src="assets/images/profile-pic6.jfif" alt="Card image cap">
+              <div class="mask rgba-white-slight"></div>
+            </div>
+              <h4 class="card-title">Julia Child</h4>
+              <p class="card-text"><q>A party without cake is really just a meeting.</q></p>
+              <p class="card-text">
+                <small class="text-muted">Accountant</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <a class="btn btn-outline-secondary mx-1 prev" href="javascript:void(0)" title="Previous">
+              <i class="fa fa-lg fa-chevron-left"></i>
+            </a>
+            <a class="btn btn-outline-secondary mx-1 next" href="javascript:void(0)" title="Next">
+              <i class="fa fa-lg fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+  (function ($) {
+  "use strict";
+  // Auto-scroll
+  $('#mycarousel').carousel({
+    interval: 5000
+  });
+
+  // Control buttons
+  $('.next').click(function () {
+    $('.carousel').carousel('next');
+    return false;
+  });
+  $('.prev').click(function () {
+    $('.carousel').carousel('prev');
+    return false;
+  });
+
+  // On carousel scroll
+  $("#myCarousel").on("slide.bs.carousel", function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 3;
+    var totalItems = $(".carousel-item").length;
+    if (idx >= totalItems - (itemsPerSlide - 1)) {
+      var it = itemsPerSlide -
+          (totalItems - idx);
+      for (var i = 0; i < it; i++) {
+        // append slides to end 
+        if (e.direction == "left") {
+          $(
+            ".carousel-item").eq(i).appendTo(".carousel-inner");
+        } else {
+          $(".carousel-item").eq(0).appendTo(".carousel-inner");
+        }
+      }
+    }
+  });
+})
+(jQuery);
+
+</script>
+
+<!-- end -->
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-light mt-2">
+
+    <div id="cake-footer">
+      <div class="container mt-2">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0" id="get-connect">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right social">
+
+            <!-- Facebook -->
+           <a href="#!"><img src="assets/images/fb.png" class="soc-med"></a>
+            <!-- Twitter -->
+            <a href="#!">
+              <img src="assets/images/tw.png" class="soc-med"></a>
+            <!-- Instagram -->
+            <a href="#!">
+              <img src="assets/images/ig.png" class="soc-med"></a>
+            <!--Youtube -->
+            <a href="#!">
+              <img src="assets/images/yt.png" class="soc-med"></a>
+            <!--Snapchat-->
+           <a href="#!">
+              <img src="assets/images/sc.png" class="soc-med"></a>
+
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5" id="footer-container">
+
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Disclaimer</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purle">
+          <p id="footer-text">Images in this website are from Pexels, Unsplash, Dribble and Google Images. Photos are used for training purpose and not to commercialized.</p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Products</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <a href="#!">Cakes</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Cupcakes</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Pastry</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Desserts</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Questions?</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <a href="#!">FAQ's</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p id="footer-text">
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold" id="footer-heading">Contact</h6>
+          <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purple">
+          <p id="footer-text">
+            <i class="fa fa-home mr-3"></i> 135 B, Building A SM Megamall, EDSA Corner Julia Vargas Avenue</p>
+          <p id="footer-text">
+            <i class="fa fa-envelope mr-3"></i> orders@cakelady.com</p>
+          <p id="footer-text">
+            <i class="fa fa-phone mr-3"></i> +639-485681578</p>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3" id="footer-text1">© 2018 Copyright:
+      <a href="#" id="copyright-cake"> Cake Lady</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+<!-- external bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/mdb.min.js"></script>
+
+
+</body>
+</html>

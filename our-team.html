@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!-- bootstrap -->
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<!-- animate -->
 	<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 	<!-- font-awesome -->
@@ -19,7 +20,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Caveat|Dosis|Overlock|Quattrocento+Sans|Maitree|Acme|Ubuntu|Roboto+Condensed" rel="stylesheet">
 	<!-- javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 </head>
 <body id="our-team">
 
@@ -54,19 +55,19 @@ $(document).ready(function(){
     <ul class="navbar-nav mx-auto text-center">
       
       <li class="nav-item" id="nav-item">
-        <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-uppercase" href="index.html"><img src="assets/images/home.png" class="home-icon"><span class="sr-only">(current)</span><small id="nav-link-sm">Home</small></a>
       </li>
       
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="gallery.html">Gallery</a>
+        <a class="nav-link text-uppercase" href="gallery.html"><img src="assets/images/gallery.png" class="home-icon"><small id="nav-link-sm">Gallery</small></a>
       </li>
 
       <li class="nav-item active">
-        <a class="nav-link text-uppercase" href="#our-team">Our Team</a>
+        <a class="nav-link text-uppercase" href="#our-team"><img src="assets/images/people.png" class="home-icon"><small id="nav-link-sm">Our Team</small></a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#">Order Now</a>
+        <a class="nav-link text-uppercase" href="contact-us.html"><img src="assets/images/contact-us.png" class="home-icon"><small id="nav-link-sm">Contact Us</small></a>
       </li>
     </ul>
 
@@ -84,35 +85,36 @@ $(document).ready(function(){
 <!-- End of navbar -->
 
 <!-- Header -->
-<section><a href="#team" class="scroll-down" address="true"></a></section>
 
-<img src="assets/images/cake-baker.jpg" class="team-heading img-fluid">
-
-  <script type="text/javascript">
-    $(document).ready(function($){
-$("a").on('click', function (e) {
-if (this.hash !== "" && this.pathname == window.location.pathname) {
-e.preventDefault();
-var target = this.hash;
-var topOffset = 0; 
-if (target != "#top") {
-var topOffset = $(target).offset().top;
-}
-
-$('html, body').stop().animate({
-'scrollTop': topOffset
-}, 900, 'swing', function () {
-window.location.hash = target;
-});
-}
-});
-});
-  </script>
+<img src="assets/images/team-heading.jpeg" class="team-heading img-fluid animated fadeInDownBig slow">
 
 <!-- end of header -->
 
+<!-- Back to top -->
+
+<a id="button"></a>
+
+<script type="text/javascript">
+  var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+</script>
+
+<!-- end -->
+
 <!-- Team -->
-<section id="team" class="pb-3 pt-3">
+<section id="team" class="pb-3">
     <div class="container">
         <img src="assets/images/core-team.jpg" class="img-fluid mx-auto our-team">
         <div class="row">
@@ -284,13 +286,12 @@ window.location.hash = target;
     <div class="col-md-10 mx-auto mt-2">
     <img src="assets/images/be-part.jpg" id="be-part">
       <img src="assets/images/cake.gif" class="team-cake">
-      <p class="lead mt-5" id="team-text">Encouraging all cake and pastry lover to join our growing team.<br> No required baking skills, but we need passionate and dedicated people.<br>If you're interested, send your resume to:<br><img src="assets/images/mail.gif" class="team-mail"><span class="team-email"><a href="mailto:barrun.lady@gmail.com">apply@cakelady.com</a></span></p>
+      <p class="lead" id="team-text">Encouraging all cake and pastry lover to join our growing team.<br> No required baking skills, but we need passionate and dedicated people.<br>If you're interested, send your resume to:<br><img src="assets/images/mail.gif" class="team-mail"><span class="team-email"><a href="mailto:barrun.lady@gmail.com">apply@cakelady.com</a></span></p>
     </div>
   </div>  
 </div>
 
   <!-- end -->
-
 
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">
@@ -347,7 +348,7 @@ window.location.hash = target;
           <!-- Content -->
           <h6 class="text-uppercase font-weight-bold" id="footer-heading">Disclaimer</h6>
           <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" id="deep-purle">
-          <p id="footer-text">Images in this website are from Pexels, Unsplash and Google. Photos are used for training purpose and not to commercialized.</p>
+          <p id="footer-text">Images in this website are from Pexels, Unsplash, Dribble and Google Images. Photos are used for training purpose and not to commercialized.</p>
 
         </div>
         <!-- Grid column -->
