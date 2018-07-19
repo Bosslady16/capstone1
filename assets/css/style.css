@@ -57,11 +57,17 @@
 
 /*Slider*/
 
-.carousel-caption{
-	font-family: 'Advent Pro', sans-serif;
-	font-size: 1.75rem;
-	background: rgba(255, 255, 255, 0.5);
-	border: 2px double pink;
+.carousel-indicators > li {
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#indicators li {
+  background: #FFF0F5;
+}
+
+#indicators li:hover{
+  background-color: #E6E6FA;
 }
 
 /*end of slider*/
@@ -738,6 +744,11 @@ input[id="email"]
 
 #gal-text {
   font-size: 0.4rem;
+}
+
+.carousel-indicators > li {
+    padding: 15px;
+    border-radius: 50%;
 }
 
 }
