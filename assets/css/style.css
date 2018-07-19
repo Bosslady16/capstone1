@@ -659,8 +659,8 @@ section .section-title {
 }
 
 .soc-med {
-	height: 20px;
-	width: 20px;
+	height: 30px;
+	width: 30px;
 }
 
 #our-story {
@@ -694,7 +694,7 @@ section .section-title {
 }
 
 #gal-text {
-  font-size: 0.4rem;
+  font-size: 0.7rem;
 }
 
 #team-text {
@@ -704,6 +704,11 @@ section .section-title {
 
 .team-email > a {
   font-size: 20px;
+}
+
+input[id="email"]
+{
+    font-size:10px;
 }
 
 }
