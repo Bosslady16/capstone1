@@ -58,7 +58,7 @@
 /*Slider*/
 
 .carousel-indicators > li {
-    padding: 15px;
+    padding: 10px 5px;
     border-radius: 50%;
 }
 
